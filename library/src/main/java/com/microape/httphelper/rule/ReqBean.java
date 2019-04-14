@@ -5,17 +5,10 @@ package com.microape.httphelper.rule;
  *  * Email ：pengle609@163.com
  *  
  */
-public abstract class ReqBean implements ReqProtocol{
+public abstract class ReqBean{
 
-    @Override
-    public String baseUrl() {
-        return null;
-    }
+    protected abstract String baseUrl();
 
-    @Override
-    public String url() {
-        return null;
-    }
-
+    public abstract String url() ;
 
 }

@@ -5,5 +5,6 @@ package com.microape.httphelper.rule;
  *  * Email ：pengle609@163.com
  *  
  */
-public class RespBean implements {
+public class RespBean {
+
 }
