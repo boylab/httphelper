@@ -14,7 +14,7 @@ public abstract class HttpCallBack<Result> implements HttpListener, ICallBack<Re
 
     @Override
     public void onStart(int what) {
-        // TODO: 2019/4/12 请求开始，等待结果 
+        // 2019/4/12 请求开始，等待结果
     }
 
     @Override
@@ -41,7 +41,7 @@ public abstract class HttpCallBack<Result> implements HttpListener, ICallBack<Re
 
     @Override
     public void onFinish(int what) {
-        // TODO: 2019/4/12 请求结束、取消等待
+        //  2019/4/12 请求结束、取消等待
     }
 
     private Class<?> analysisClassInfo(Object obj){
