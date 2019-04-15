@@ -1,4 +1,4 @@
-# HttpHelper简介
+# httphelper简介
 
 * 1、 纯面向对象（返回json字符格式），传入实体类，返回实体类
 * 2、 可一行代码切换支持okhttp、volley、nohttp、kalle、xutils等框架，
