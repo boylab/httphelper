@@ -7,9 +7,23 @@
 
 # 使用
 
-### 1、使用Gradle构建时添加一下依赖即可:
+### 1、Android Studio添加一下依赖:
 ```
-compile 'com.microape:httphelper:0.0.2'
+Add it in your root build.gradle at the end of repositories:
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+```
+
+```
+Step 2. Add the dependency
+    dependencies {
+            compile 'com.microape:httphelper:0.0.2'
+    }
+
 ```
 ### 2、需要的权限
 ```
