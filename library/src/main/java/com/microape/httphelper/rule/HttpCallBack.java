@@ -6,10 +6,10 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 /**
- *  * Author：pengl on 2019/4/12 08:54
- *  * Email ：pengle609@163.com
- *  
+ * @Author：pengl on 2019/4/12 08:54
+ * @Email ：pengle609@163.com
  */
+
 public abstract class HttpCallBack<Result> implements HttpListener, ICallBack<Result> {
 
     @Override
@@ -43,6 +43,12 @@ public abstract class HttpCallBack<Result> implements HttpListener, ICallBack<Re
     public void onFinish(int what) {
         //  2019/4/12 请求结束、取消等待
     }
+
+    @Override
+    public abstract void onSucceed(int what, Result result) ;
+
+    @Override
+    public abstract void onFailure(int what, Exception e);
 
     private Class<?> analysisClassInfo(Object obj){
         final ParameterizedType genType = (ParameterizedType) obj.getClass().getGenericSuperclass();
